@@ -1,65 +1,17 @@
 ---
-import { Heart, ArrowUp } from 'lucide-astro';
+import { ArrowUp } from 'lucide-astro';
 ---
 
-<footer class="bg-gray-900 text-white py-12">
+<footer class="bg-gray-900 text-white py-6">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-4 gap-8">
-      <!-- Brand -->
-      <div class="md:col-span-2">
-        <h3 class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-4">
-          Sneha Kamble
-        </h3>
-        <p class="text-gray-400 mb-4 leading-relaxed">
-          Cloud and DevOps enthusiast passionate about building scalable, reliable systems 
-          and bridging the gap between development and operations.
-        </p>
-        <p class="text-gray-400 text-sm">
-          Ready to contribute to innovative teams and make a meaningful impact in the tech industry.
-        </p>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="#about" class="hover:text-primary-400 transition-colors">About Me</a></li>
-          <li><a href="#skills" class="hover:text-primary-400 transition-colors">Skills</a></li>
-          <li><a href="#projects" class="hover:text-primary-400 transition-colors">Projects</a></li>
-          <li><a href="#experience" class="hover:text-primary-400 transition-colors">Experience</a></li>
-          <li><a href="#education" class="hover:text-primary-400 transition-colors">Education</a></li>
-          <li><a href="#contact" class="hover:text-primary-400 transition-colors">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Technologies -->
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Technologies</h4>
-        <ul class="space-y-2 text-gray-400 text-sm">
-          <li>AWS Cloud Services</li>
-          <li>Docker & Kubernetes</li>
-          <li>Jenkins & GitHub Actions</li>
-          <li>Terraform & Ansible</li>
-          <li>Linux & Shell Scripting</li>
-          <li>Monitoring & Logging</li>
-        </ul>
-      </div>
-    </div>
-
-    <hr class="border-gray-800 my-8" />
-
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="flex items-center text-gray-400 text-sm mb-4 md:mb-0">
-        <span>Built with</span>
-        <Heart class="w-4 h-4 mx-1 text-red-500" />
-        <span>using Astro.js & Tailwind CSS</span>
-      </div>
-
-      <div class="flex items-center space-x-4">
         <p class="text-gray-400 text-sm">
           © 2024 Sneha Kamble. All rights reserved.
         </p>
-        
+      </div>
+
+      <div class="flex items-center space-x-4">
         <!-- Back to Top -->
         <button 
           onclick="window.scrollTo({top: 0, behavior: 'smooth'})"

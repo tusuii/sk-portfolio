@@ -1,4 +1,5 @@
 ---
+import ParticleBackground from '../components/ParticleBackground.astro';
 export interface Props {
   title: string;
   description?: string;
@@ -22,30 +23,11 @@ const { title, description = "Sneha Kamble - Cloud and DevOps Enthusiast" } = As
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  <body class="text-gray-900 transition-colors duration-300">
+    <ParticleBackground />
     <slot />
     
     <script>
-      // Dark mode toggle functionality
-      function initTheme() {
-        const theme = localStorage.getItem('theme') || 'light';
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-        
-        const toggles = document.querySelectorAll('[data-theme-toggle]');
-        toggles.forEach(toggle => {
-          toggle.addEventListener('click', () => {
-            const isDark = document.documentElement.classList.contains('dark');
-            const newTheme = isDark ? 'light' : 'dark';
-            
-            document.documentElement.classList.toggle('dark', newTheme === 'dark');
-            localStorage.setItem('theme', newTheme);
-          });
-        });
-      }
-      
-      // Initialize theme on page load
-      initTheme();
-      
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

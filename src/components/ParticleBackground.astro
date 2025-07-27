@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="particles-container" class="absolute inset-0 overflow-hidden pointer-events-none">
+<div id="particles-container" class="absolute inset-0 overflow-hidden pointer-events-none" style="z-index: -10;">
   <canvas id="particles-canvas" class="w-full h-full"></canvas>
 </div>
 
@@ -39,7 +39,7 @@
           y: Math.random() * this.canvas.offsetHeight,
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
-          size: Math.random() * 2 + 1,
+          size: Math.random() * 4 + 2, // Adjusted size for better visibility
           opacity: Math.random() * 0.5 + 0.2,
         });
       }
@@ -91,8 +91,8 @@
             this.ctx.beginPath();
             this.ctx.moveTo(particle.x, particle.y);
             this.ctx.lineTo(otherParticle.x, otherParticle.y);
-            this.ctx.strokeStyle = `rgba(59, 130, 246, ${0.1 * (1 - distance / 100)})`;
-            this.ctx.lineWidth = 1;
+            this.ctx.strokeStyle = `rgba(59, 130, 246, ${0.5 * (1 - distance / 100)})`;
+            this.ctx.lineWidth = 1.5;
             this.ctx.stroke();
           }
         });
