@@ -1,0 +1,246 @@
+---
+import { ExternalLink, Github, Cloud, GitBranch, Settings } from 'lucide-astro';
+---
+
+<section id="projects" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+        Projects & Labs
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Hands-on DevOps projects demonstrating practical skills in cloud infrastructure and automation
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- AWS 3-Tier Architecture Project -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4">
+                <Cloud class="w-6 h-6 text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">AWS 3-Tier Architecture</h3>
+            </div>
+            <div class="flex space-x-2">
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <Github class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <ExternalLink class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Implemented a scalable 3-tier web application architecture on AWS using EC2, RDS, and Application Load Balancer. 
+            Configured auto-scaling groups, security groups, and database replication for high availability.
+          </p>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Technologies Used:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">AWS EC2</span>
+              <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">RDS</span>
+              <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">ALB</span>
+              <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Auto Scaling</span>
+              <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">VPC</span>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Key Features:</h4>
+            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>• High availability across multiple AZs</li>
+              <li>• Automated scaling based on traffic</li>
+              <li>• Secure database layer with backup</li>
+              <li>• Load balancing for optimal performance</li>
+            </ul>
+          </div>
+          
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-500 dark:text-gray-400">Status: Completed</span>
+            <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">Production Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CI/CD Pipeline Project -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-4">
+                <GitBranch class="w-6 h-6 text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">CI/CD Pipeline</h3>
+            </div>
+            <div class="flex space-x-2">
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <Github class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <ExternalLink class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Built an end-to-end CI/CD pipeline using Jenkins and GitHub Actions for automated testing, building, 
+            and deployment of containerized applications to AWS ECS with blue-green deployment strategy.
+          </p>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Technologies Used:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">Jenkins</span>
+              <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">GitHub Actions</span>
+              <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">Docker</span>
+              <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">AWS ECS</span>
+              <span class="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded-full">Maven</span>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Pipeline Features:</h4>
+            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>• Automated testing and code quality checks</li>
+              <li>• Docker image building and registry push</li>
+              <li>• Blue-green deployment strategy</li>
+              <li>• Rollback capabilities and monitoring</li>
+            </ul>
+          </div>
+          
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-500 dark:text-gray-400">Status: In Progress</span>
+            <span class="bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded-full">Testing Phase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure as Code Project -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg flex items-center justify-center mr-4">
+                <Settings class="w-6 h-6 text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Infrastructure as Code</h3>
+            </div>
+            <div class="flex space-x-2">
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <Github class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <ExternalLink class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Provisioned and managed AWS infrastructure using Terraform and Ansible for configuration management. 
+            Implemented version-controlled infrastructure with automated deployment and environment consistency.
+          </p>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Technologies Used:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded-full">Terraform</span>
+              <span class="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded-full">Ansible</span>
+              <span class="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded-full">AWS</span>
+              <span class="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded-full">Git</span>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Implementation:</h4>
+            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>• Modular Terraform configurations</li>
+              <li>• Ansible playbooks for configuration</li>
+              <li>• Multi-environment support</li>
+              <li>• State management and locking</li>
+            </ul>
+          </div>
+          
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-500 dark:text-gray-400">Status: Planning</span>
+            <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Research Phase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitoring & Observability -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
+                <Settings class="w-6 h-6 text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Monitoring Stack</h3>
+            </div>
+            <div class="flex space-x-2">
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <Github class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+              <a href="#" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <ExternalLink class="w-4 h-4 text-gray-600 dark:text-gray-400" />
+              </a>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Set up comprehensive monitoring and observability stack using Prometheus, Grafana, and ELK stack 
+            for real-time metrics, logging, and alerting across distributed microservices architecture.
+          </p>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Technologies Used:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded-full">Prometheus</span>
+              <span class="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded-full">Grafana</span>
+              <span class="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded-full">ELK Stack</span>
+              <span class="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded-full">AlertManager</span>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Monitoring Features:</h4>
+            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>• Real-time metrics and dashboards</li>
+              <li>• Centralized logging and analysis</li>
+              <li>• Automated alerting and notifications</li>
+              <li>• Performance and health monitoring</li>
+            </ul>
+          </div>
+          
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-500 dark:text-gray-400">Status: Planning</span>
+            <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Learning Phase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mt-16 text-center animate-on-scroll">
+      <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
+        <h3 class="text-2xl font-bold mb-4">Want to see more projects?</h3>
+        <p class="text-primary-100 mb-6 max-w-2xl mx-auto">
+          I'm constantly working on new DevOps projects and labs. Check out my GitHub for the latest updates 
+          and detailed documentation of my learning journey.
+        </p>
+        <a 
+          href="https://github.com/sneha-kamble" 
+          class="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+        >
+          <Github class="w-5 h-5 mr-2" />
+          View GitHub Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

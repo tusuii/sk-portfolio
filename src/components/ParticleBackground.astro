@@ -1,0 +1,112 @@
+---
+---
+
+<div id="particles-container" class="absolute inset-0 overflow-hidden pointer-events-none">
+  <canvas id="particles-canvas" class="w-full h-full"></canvas>
+</div>
+
+<script>
+  class ParticleSystem {
+    constructor(canvas) {
+      this.canvas = canvas;
+      this.ctx = canvas.getContext('2d');
+      this.particles = [];
+      this.mousePosition = { x: 0, y: 0 };
+      
+      this.resize();
+      this.init();
+      this.animate();
+      
+      window.addEventListener('resize', () => this.resize());
+      window.addEventListener('mousemove', (e) => {
+        this.mousePosition.x = e.clientX;
+        this.mousePosition.y = e.clientY;
+      });
+    }
+    
+    resize() {
+      this.canvas.width = this.canvas.offsetWidth * window.devicePixelRatio;
+      this.canvas.height = this.canvas.offsetHeight * window.devicePixelRatio;
+      this.ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    }
+    
+    init() {
+      const particleCount = Math.min(100, Math.floor((this.canvas.width * this.canvas.height) / 15000));
+      
+      for (let i = 0; i < particleCount; i++) {
+        this.particles.push({
+          x: Math.random() * this.canvas.offsetWidth,
+          y: Math.random() * this.canvas.offsetHeight,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          size: Math.random() * 2 + 1,
+          opacity: Math.random() * 0.5 + 0.2,
+        });
+      }
+    }
+    
+    animate() {
+      this.ctx.clearRect(0, 0, this.canvas.offsetWidth, this.canvas.offsetHeight);
+      
+      // Update and draw particles
+      this.particles.forEach((particle, index) => {
+        // Update position
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+        
+        // Wrap around screen
+        if (particle.x < 0) particle.x = this.canvas.offsetWidth;
+        if (particle.x > this.canvas.offsetWidth) particle.x = 0;
+        if (particle.y < 0) particle.y = this.canvas.offsetHeight;
+        if (particle.y > this.canvas.offsetHeight) particle.y = 0;
+        
+        // Mouse interaction
+        const dx = this.mousePosition.x - particle.x;
+        const dy = this.mousePosition.y - particle.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        if (distance < 100) {
+          const force = (100 - distance) / 100;
+          particle.vx += (dx / distance) * force * 0.01;
+          particle.vy += (dy / distance) * force * 0.01;
+        }
+        
+        // Apply friction
+        particle.vx *= 0.99;
+        particle.vy *= 0.99;
+        
+        // Draw particle
+        this.ctx.beginPath();
+        this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        this.ctx.fillStyle = `rgba(59, 130, 246, ${particle.opacity})`;
+        this.ctx.fill();
+        
+        // Draw connections
+        this.particles.slice(index + 1).forEach(otherParticle => {
+          const dx = particle.x - otherParticle.x;
+          const dy = particle.y - otherParticle.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance < 100) {
+            this.ctx.beginPath();
+            this.ctx.moveTo(particle.x, particle.y);
+            this.ctx.lineTo(otherParticle.x, otherParticle.y);
+            this.ctx.strokeStyle = `rgba(59, 130, 246, ${0.1 * (1 - distance / 100)})`;
+            this.ctx.lineWidth = 1;
+            this.ctx.stroke();
+          }
+        });
+      });
+      
+      requestAnimationFrame(() => this.animate());
+    }
+  }
+  
+  // Initialize particle system when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+      new ParticleSystem(canvas);
+    }
+  });
+</script>

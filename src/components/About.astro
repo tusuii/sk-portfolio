@@ -1,0 +1,86 @@
+---
+import { User, Target, Heart } from 'lucide-astro';
+---
+
+<section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+        About Me
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        A dedicated professional transitioning from business operations to DevOps engineering
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Profile Image -->
+      <div class="animate-on-scroll">
+        <div class="relative">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-2xl bg-gradient-to-br from-primary-400 to-secondary-400 p-4">
+            <div class="w-full h-full rounded-xl bg-white dark:bg-gray-700 flex items-center justify-center">
+              <User class="w-32 h-32 text-primary-600 dark:text-primary-400" />
+            </div>
+          </div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary-500 rounded-full flex items-center justify-center animate-float">
+            <Heart class="w-10 h-10 text-white" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="animate-on-scroll">
+        <div class="space-y-6">
+          <!-- Introduction -->
+          <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Hello, I'm Sneha!</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              I'm a passionate professional with a unique background in Banking, Insurance, and International Business Operations. 
+              Currently, I'm on an exciting journey transitioning into the world of DevOps and Cloud Computing.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+              My experience at Accenture in Transaction Processing has given me valuable insights into operational excellence, 
+              process optimization, and the importance of reliable, scalable systems.
+            </p>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <Target class="w-6 h-6 text-primary-600 mr-3" />
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Career Objective</h3>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+              To leverage my strong foundation in operations management and emerging DevOps expertise to contribute to 
+              innovative teams in shipping companies, banks, and process-driven organizations. I aim to streamline 
+              development workflows, improve system reliability, and drive digital transformation initiatives.
+            </p>
+          </div>
+
+          <!-- Key Highlights -->
+          <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg">
+            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Key Highlights</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div class="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span class="text-gray-700 dark:text-gray-300">6+ months of hands-on experience in transaction processing at Accenture</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span class="text-gray-700 dark:text-gray-300">Strong academic background in Banking, Insurance, and International Business</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span class="text-gray-700 dark:text-gray-300">Proven track record in research and team leadership</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span class="text-gray-700 dark:text-gray-300">Passionate about automation, cloud technologies, and continuous improvement</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

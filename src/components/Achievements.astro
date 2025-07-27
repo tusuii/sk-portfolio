@@ -1,0 +1,159 @@
+---
+import { Award, Trophy, Star, Users } from 'lucide-astro';
+---
+
+<section id="achievements" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+        Achievements & Recognition
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Academic and professional recognitions that demonstrate leadership, research capabilities, and excellence
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Best Researcher Award -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-start">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center">
+                <Award class="w-8 h-8 text-white" />
+              </div>
+            </div>
+            <div class="ml-6">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Best Researcher Award</h3>
+              <p class="text-primary-600 dark:text-primary-400 font-semibold mb-3">RCON Event - BK Birla College</p>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Recognized for outstanding research methodology, data analysis, and innovative problem-solving approaches 
+                during the Research Conference (RCON) organized by BK Birla College.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-yellow-500" />
+                  <span>Demonstrated exceptional analytical skills</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-yellow-500" />
+                  <span>Innovative research approach and methodology</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-yellow-500" />
+                  <span>Outstanding presentation and documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Best Team Leader Award -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-start">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <Users class="w-8 h-8 text-white" />
+              </div>
+            </div>
+            <div class="ml-6">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Best Team Leader Award</h3>
+              <p class="text-primary-600 dark:text-primary-400 font-semibold mb-3">RCON Event - BK Birla College</p>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Awarded for exceptional leadership skills, team coordination, and ability to drive collaborative 
+                research projects to successful completion during the RCON event.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-purple-500" />
+                  <span>Exceptional team coordination and motivation</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-purple-500" />
+                  <span>Strategic project planning and execution</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <Star class="w-4 h-4 mr-2 text-purple-500" />
+                  <span>Fostered collaborative learning environment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievement Statistics -->
+    <div class="mt-16 animate-on-scroll">
+      <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
+        <h3 class="text-2xl font-bold text-center mb-8">Achievement Highlights</h3>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Trophy class="w-8 h-8 text-white" />
+            </div>
+            <div class="text-3xl font-bold mb-2">2</div>
+            <div class="text-primary-100">Awards Won</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Award class="w-8 h-8 text-white" />
+            </div>
+            <div class="text-3xl font-bold mb-2">1</div>
+            <div class="text-primary-100">Research Projects</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users class="w-8 h-8 text-white" />
+            </div>
+            <div class="text-3xl font-bold mb-2">5+</div>
+            <div class="text-primary-100">Team Members Led</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Star class="w-8 h-8 text-white" />
+            </div>
+            <div class="text-3xl font-bold mb-2">100%</div>
+            <div class="text-primary-100">Project Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Demonstrated -->
+    <div class="mt-16 animate-on-scroll">
+      <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">Skills Demonstrated Through Achievements</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <Award class="w-6 h-6 text-blue-600" />
+          </div>
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Research Excellence</h4>
+          <p class="text-gray-600 dark:text-gray-300 text-sm">
+            Advanced research methodologies, data analysis, and innovative problem-solving capabilities
+          </p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <Users class="w-6 h-6 text-purple-600" />
+          </div>
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Leadership</h4>
+          <p class="text-gray-600 dark:text-gray-300 text-sm">
+            Team management, strategic planning, and collaborative project execution skills
+          </p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <Star class="w-6 h-6 text-green-600" />
+          </div>
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Excellence</h4>
+          <p class="text-gray-600 dark:text-gray-300 text-sm">
+            Commitment to quality, continuous improvement, and delivering outstanding results
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

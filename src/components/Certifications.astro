@@ -1,0 +1,216 @@
+---
+import { Award, ExternalLink, Calendar, CheckCircle, Clock } from 'lucide-astro';
+---
+
+<section id="certifications" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+        Certifications & Learning
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Continuous learning journey in DevOps, cloud technologies, and professional development
+      </p>
+    </div>
+
+    <!-- Current Certifications -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">Completed Certifications</h3>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- IBM DevOps Certification -->
+        <div class="animate-on-scroll">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="flex items-start justify-between mb-6">
+              <div class="flex items-start">
+                <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl flex items-center justify-center mr-4">
+                  <Award class="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">DevOps Foundations</h4>
+                  <p class="text-blue-600 dark:text-blue-400 font-semibold">IBM</p>
+                </div>
+              </div>
+              <div class="flex items-center bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
+                <CheckCircle class="w-4 h-4 mr-2" />
+                <span>Completed</span>
+              </div>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+              Comprehensive foundation course covering DevOps principles, practices, and tools. Gained understanding 
+              of continuous integration, continuous delivery, and the cultural aspects of DevOps transformation.
+            </p>
+
+            <div class="mb-4">
+              <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Key Learning Areas:</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">DevOps Culture</span>
+                <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">CI/CD Concepts</span>
+                <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Automation</span>
+                <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Collaboration</span>
+                <span class="bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">Monitoring</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                <Calendar class="w-4 h-4 mr-2" />
+                <span>Completed 2024</span>
+              </div>
+              <a 
+                href="#" 
+                class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium"
+              >
+                View Certificate
+                <ExternalLink class="w-4 h-4 ml-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Certification Placeholder -->
+        <div class="animate-on-scroll">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-dashed border-gray-300 dark:border-gray-600">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Clock class="w-8 h-8 text-gray-400" />
+              </div>
+              <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Next Certification</h4>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Working towards AWS Certified Solutions Architect - Associate
+              </p>
+              <div class="bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm inline-block">
+                In Progress
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planned Certifications -->
+    <div class="mb-16 animate-on-scroll">
+      <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">Certification Roadmap</h3>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Short Term Goals -->
+          <div>
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                <span class="text-white text-sm font-bold">1</span>
+              </div>
+              Short Term (3-6 months)
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">AWS Solutions Architect Associate</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Cloud architecture fundamentals</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <Clock class="w-5 h-5 text-yellow-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">Docker Certified Associate</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Container orchestration</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Medium Term Goals -->
+          <div>
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+              <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                <span class="text-white text-sm font-bold">2</span>
+              </div>
+              Medium Term (6-12 months)
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <Clock class="w-5 h-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">Certified Kubernetes Administrator</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">K8s cluster management</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <Clock class="w-5 h-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">Jenkins Certified Engineer</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">CI/CD automation</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Long Term Goals -->
+          <div>
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+              <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                <span class="text-white text-sm font-bold">3</span>
+              </div>
+              Long Term (12+ months)
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <Clock class="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">AWS DevOps Engineer Professional</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Advanced cloud DevOps</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <Clock class="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p class="font-medium text-gray-900 dark:text-white">Terraform Associate</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Infrastructure as Code</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Philosophy -->
+    <div class="animate-on-scroll">
+      <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold mb-4">Continuous Learning Philosophy</h3>
+          <p class="text-primary-100 mb-6 max-w-3xl mx-auto">
+            I believe in staying current with rapidly evolving technologies through hands-on practice, 
+            industry certifications, and real-world project implementation. Each certification represents 
+            not just theoretical knowledge, but practical skills I can apply immediately.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award class="w-8 h-8 text-white" />
+              </div>
+              <h4 class="text-xl font-bold mb-2">Industry Recognition</h4>
+              <p class="text-primary-100 text-sm">Pursuing globally recognized certifications</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle class="w-8 h-8 text-white" />
+              </div>
+              <h4 class="text-xl font-bold mb-2">Practical Application</h4>
+              <p class="text-primary-100 text-sm">Implementing learned skills in real projects</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock class="w-8 h-8 text-white" />
+              </div>
+              <h4 class="text-xl font-bold mb-2">Continuous Growth</h4>
+              <p class="text-primary-100 text-sm">Staying updated with latest technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,163 @@
+---
+import { Server, GitBranch, Container, Cloud, Monitor, Code, Package, Globe } from 'lucide-astro';
+---
+
+<section id="devops-tools" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+        DevOps Tools & Technologies
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Modern DevOps stack I'm mastering to build scalable, reliable, and automated infrastructure
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Operating Systems -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-xl mb-6 mx-auto">
+            <Server class="w-8 h-8 text-blue-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Operating Systems</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-sm px-3 py-1 rounded-full m-1">Linux</span>
+            <span class="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-sm px-3 py-1 rounded-full m-1">macOS</span>
+            <span class="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-sm px-3 py-1 rounded-full m-1">Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version Control -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-orange-100 dark:bg-orange-900/50 rounded-xl mb-6 mx-auto">
+            <GitBranch class="w-8 h-8 text-orange-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Version Control</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-200 text-sm px-3 py-1 rounded-full m-1">Git</span>
+            <span class="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-200 text-sm px-3 py-1 rounded-full m-1">GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CI/CD & Automation -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/50 rounded-xl mb-6 mx-auto">
+            <Code class="w-8 h-8 text-green-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">CI/CD & Automation</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-sm px-3 py-1 rounded-full m-1">Jenkins</span>
+            <span class="inline-block bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-sm px-3 py-1 rounded-full m-1">GitHub Actions</span>
+            <span class="inline-block bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-sm px-3 py-1 rounded-full m-1">Maven</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Containerization -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-purple-100 dark:bg-purple-900/50 rounded-xl mb-6 mx-auto">
+            <Container class="w-8 h-8 text-purple-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Containerization</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-sm px-3 py-1 rounded-full m-1">Docker</span>
+            <span class="inline-block bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-sm px-3 py-1 rounded-full m-1">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Platforms -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-yellow-100 dark:bg-yellow-900/50 rounded-xl mb-6 mx-auto">
+            <Cloud class="w-8 h-8 text-yellow-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Cloud Platforms</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 text-sm px-3 py-1 rounded-full m-1">AWS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitoring & Logging -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-red-100 dark:bg-red-900/50 rounded-xl mb-6 mx-auto">
+            <Monitor class="w-8 h-8 text-red-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Monitoring & Logging</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-sm px-3 py-1 rounded-full m-1">Prometheus</span>
+            <span class="inline-block bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 text-sm px-3 py-1 rounded-full m-1">Grafana</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure as Code -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900/50 rounded-xl mb-6 mx-auto">
+            <Package class="w-8 h-8 text-indigo-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Infrastructure as Code</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 text-sm px-3 py-1 rounded-full m-1">Terraform</span>
+            <span class="inline-block bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 text-sm px-3 py-1 rounded-full m-1">Ansible</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Servers -->
+      <div class="animate-on-scroll">
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="flex items-center justify-center w-16 h-16 bg-teal-100 dark:bg-teal-900/50 rounded-xl mb-6 mx-auto">
+            <Globe class="w-8 h-8 text-teal-600" />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4 text-gray-900 dark:text-white">Web Servers</h3>
+          <div class="space-y-2 text-center">
+            <span class="inline-block bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 text-sm px-3 py-1 rounded-full m-1">Apache Tomcat</span>
+            <span class="inline-block bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 text-sm px-3 py-1 rounded-full m-1">Nginx</span>
+            <span class="inline-block bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 text-sm px-3 py-1 rounded-full m-1">Apache2</span>
+            <span class="inline-block bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 text-sm px-3 py-1 rounded-full m-1">Nexus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Path -->
+    <div class="mt-16 animate-on-scroll">
+      <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
+        <h3 class="text-2xl font-bold text-center mb-6">My DevOps Learning Journey</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold">1</span>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Foundation</h4>
+            <p class="text-primary-100">Mastering Linux, Git, and basic scripting</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold">2</span>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Automation</h4>
+            <p class="text-primary-100">Building CI/CD pipelines and containerization</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold">3</span>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Scale</h4>
+            <p class="text-primary-100">Cloud platforms and infrastructure orchestration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
