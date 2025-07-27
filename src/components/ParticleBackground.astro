@@ -39,7 +39,7 @@
           y: Math.random() * this.canvas.offsetHeight,
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
-          size: Math.random() * 4 + 2, // Adjusted size for better visibility
+          size: Math.random() * 2 + 1, // Smaller size
           opacity: Math.random() * 0.5 + 0.2,
         });
       }
@@ -65,8 +65,8 @@
         const dy = this.mousePosition.y - particle.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        if (distance < 100) {
-          const force = (100 - distance) / 100;
+        if (distance < 150) { // Increased interaction radius
+          const force = (150 - distance) / 150;
           particle.vx += (dx / distance) * force * 0.01;
           particle.vy += (dy / distance) * force * 0.01;
         }
@@ -87,11 +87,11 @@
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
           
-          if (distance < 100) {
+          if (distance < 150) { // Increased connection distance
             this.ctx.beginPath();
             this.ctx.moveTo(particle.x, particle.y);
             this.ctx.lineTo(otherParticle.x, otherParticle.y);
-            this.ctx.strokeStyle = `rgba(59, 130, 246, ${0.5 * (1 - distance / 100)})`;
+            this.ctx.strokeStyle = `rgba(59, 130, 246, ${0.4 * (1 - distance / 150)})`; // Adjusted opacity
             this.ctx.lineWidth = 1.5;
             this.ctx.stroke();
           }
